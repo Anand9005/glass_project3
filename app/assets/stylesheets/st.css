@@ -1,0 +1,37 @@
+body {
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    margin-top: 50px;
+  }
+  
+  .card {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn-block {
+    margin-top: 1.5rem;
+  }
+  
+  .btn-primary {
+    background-color: #00bcd4;
+    border-color: #00bcd4;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0197af;
+    border-color: #0197af;
+  }
+  
+  hr {
+    border-top: 1px solid #ccc;
+  }
+  
+  p.text-center {
+    margin-top: 1.5rem;
+  }

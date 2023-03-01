@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h4><b>Glasses:<b></h4><br/>
+  <% @store.images.each do |image| %>
+  <%= image_tag image ,:height=>"200",:width=>"200"%>
+  <% end %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @store.name %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @store.color %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @store.category %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @store.price %>
+</p>
+
+<%= link_to 'Edit', edit_store_path(@store) %> |
+<%= link_to 'Back', stores_path %>

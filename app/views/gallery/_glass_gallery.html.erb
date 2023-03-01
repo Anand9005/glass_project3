@@ -1,0 +1,22 @@
+<table>
+
+<tr>
+<% count=0 %>
+<% @glass_gallery.each do |gl|%>
+
+<% if (count % 3) == 0%>
+</tr>
+<tr>
+<% end %>
+<% count+=1 %>
+<td><% gl.images.each do |image| %>
+  <%= image_tag image ,:height=>"100",:width=>"100"%>
+  <% end %><br />
+Name : <%= gl.name %><br />
+Color :<%= gl.color %><br />
+Category : <%= gl.category %><br />
+Price : <%= gl.price %>
+<%= button_to 'Add to Cart', line_items_path(:store_id => gl.id)%> </td>
+<% end %>
+</tr>
+</table>
