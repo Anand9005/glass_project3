@@ -1,4 +1,5 @@
 class GalleryController < ApplicationController
+  before_action :authenticate_user!
   def index
     @glass_gallery = Store.all
   end
